@@ -11,6 +11,7 @@ import {
   BrowserRouter as Router,
 } from 'react-router-dom';
 import Topics from './Topics/Topics';
+import Summary from './Summary/Summary';
 
 class App extends React.Component {
   public render() {
@@ -21,6 +22,7 @@ class App extends React.Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <div className="App-intro">
+          <Summary/>
           <Router>
             <div>
               <ul>
