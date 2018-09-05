@@ -26,3 +26,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+div > ul {
+  display: flex;
+  list-style: none;
+  padding: 0 0;
+}
+
+div> ul > li {
+  flex: 1 1 100px;;
+}
