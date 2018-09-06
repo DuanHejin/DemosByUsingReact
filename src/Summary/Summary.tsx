@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { DemoSummary } from '../Models/DemoSummary';
 
 class Summary extends React.Component {
 
@@ -6,9 +8,12 @@ class Summary extends React.Component {
     super(props);
   }
 
-  getSummaryList = () => {
-    const list = [];
-    list.push('页面footer部固定');
+  getSummaryList = (): DemoSummary[] => {
+    const list: DemoSummary[] = [];
+    list.push(new DemoSummary({name: 'Home', toUrl: '/'}));
+    list.push(new DemoSummary({name: 'About', toUrl: '/about'}));
+    list.push(new DemoSummary({name: 'Topics', toUrl: '/topics'}));
+    list.push(new DemoSummary({name: '页面footer部固定', toUrl: '/absoluteFooter'}));
 
     return list;
   }
@@ -16,10 +21,10 @@ class Summary extends React.Component {
   render() {
     return (
       <div>
-        <p>Here is the summary of demos.</p>
+        <p>Summary of demos.</p>
         <ul>
           {
-            this.getSummaryList().map((value, index) => <li key={index}>{value}</li>)
+            this.getSummaryList().map((value, index) => <li key={index}>{<Link to={value.toUrl}>{value.name}</Link>}</li>)
           }
         </ul>
       </div>

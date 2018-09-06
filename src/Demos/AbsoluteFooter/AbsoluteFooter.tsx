@@ -7,7 +7,7 @@ class AbsoluteFooter extends React.Component {
     }
 
     render() {
-      return '';
+      return 'AbsoluteFooter';
     }
 }
 

@@ -18,8 +18,23 @@
   font-size: 1.5em;
 }
 
-.App-intro {
+html, body {
+  height: 100%;
+}
+
+.root-container {
   font-size: large;
+  display: flex;
+}
+
+.root-container > .nav {
+  width: 250px;
+  border-right: 2px solid #000000;
+  min-height: 100%;
+}
+
+.main-container {
+  flex: 1 1 auto;
 }
 
 @keyframes App-logo-spin {
@@ -29,13 +44,5 @@
 
 ul {
   list-style: none;
-}
-
-div > ul {
-  display: flex;
-  padding: 0 0;
-}
-
-div> ul > li {
-  flex: 1 1 100px;;
+  text-align: left;
 }

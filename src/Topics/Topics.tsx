@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { withRouter } from 'react-router';
 import { Link, Route } from 'react-router-dom';
 
 import Topic from './Topic/Topic';
@@ -49,4 +50,4 @@ class Topics extends React.Component<TopicsProps> {
   }
 }
 
-export default Topics;
+export default withRouter(Topics);

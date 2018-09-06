@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { withRouter } from 'react-router';
 
 const About = () => (
   <div>
@@ -6,4 +7,4 @@ const About = () => (
   </div>
 )
 
-export default About;
+export default withRouter(About);
