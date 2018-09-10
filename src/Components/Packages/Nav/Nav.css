@@ -1,0 +1,11 @@
+.nav-panel-wrap {
+  padding-left: 20px; 
+}
+
+.nav-panel-wrap ul {
+  padding: 0 0;
+}
+
+.nav-panel-wrap ul li {
+  margin: 8px 0;
+}

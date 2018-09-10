@@ -1,10 +1,12 @@
-export class DemoSummary {
+export class NavModel {
 
   public id: string;
 
   public name: string;
 
-  public toUrl: string;
+  public desc: string[];
+
+  public to: string;
 
   constructor(json?: any) {
     
@@ -14,6 +16,7 @@ export class DemoSummary {
 
     this.id = json.id;
     this.name = json.name;
-    this.toUrl = json.toUrl;
+    this.desc = json.desc;
+    this.to = json.to;
   }
 }

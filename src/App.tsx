@@ -1,26 +1,13 @@
 import * as React from 'react';
 import './App.css';
-import logo from './logo.svg';
-import Summary from './Summary/Summary';
-import Demos from './Demos/Demos';
+import AppRoutes from './AppRoutes';
 
 class App extends React.Component {
   
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <div className="root-container">
-          <div className="nav">
-            <Summary/>
-          </div>
-          <div className="main-container">
-            <Demos/>
-          </div>
-        </div>
+      <div>
+        <AppRoutes/>
       </div>
     );
   }

@@ -1,5 +1,27 @@
+/* common css start */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+.link {
+  cursor: pointer;
+  color: lightcoral;
+}
+
+/* common css end */

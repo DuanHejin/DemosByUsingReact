@@ -1,0 +1,15 @@
+.desc {
+  color: #000000;
+}
+
+.desc textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 250px;
+  font-size: 16px;
+  background-color: lightcyan;
+}
+
+.jump-link {
+  margin-top: 16px;
+}

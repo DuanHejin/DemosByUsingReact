@@ -1,25 +1,44 @@
 import * as React from 'react';
+import './Demos.css';
 import { withRouter } from 'react-router';
-import { Switch, Route } from 'react-router-dom';
-import Home from '../Home/Home';
-import About from '../About/About';
-import Topics from '../Topics/Topics';
-import AbsoluteFooter from './AbsoluteFooter/AbsoluteFooter';
+import { Link } from 'react-router-dom';
 
-class Demos extends React.Component {
+interface Props {
+  id?: string;
+  name: string;
+  desc?: string[];
+  to: string;
+}
+
+interface State {
+
+}
+
+class Demos extends React.Component<Props, State> {
 
   constructor(props: any) {
     super(props);
+    this.state = {
+      desc2: '',
+    }
   }
 
   render() {
+    const {
+      name,
+      desc,
+      to,
+    } = this.props;
     return (
-      <Switch>
-        <Route exact={true} path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/topics" component={Topics}/>
-        <Route path="/absoluteFooter" component={AbsoluteFooter}/>
-      </Switch>
+      <div>
+        <h2>{name}</h2>
+        <div className="desc">
+          <textarea value={desc ? desc.reduce((result, val) => result += val, '') : ''} readOnly={true}/>
+        </div>
+        <div className='jump-link'>
+          <Link className='link' to={to} target='_blank'>See the demo ⇨</Link>
+        </div>
+      </div>
     );
   }
 }

@@ -1,0 +1,20 @@
+.root-container {
+  font-size: large;
+  display: flex;
+}
+
+.root-container > .nav-panel {
+  width: 250px;
+  border-right: 2px solid #000000;
+}
+
+.nav-panel {
+  min-height: calc(100vh - 190px);
+  background-color: lightskyblue;
+  color: #000000;
+}
+
+.main-container {
+  flex: 1 1 auto;
+  padding: 16px 32px;
+}
