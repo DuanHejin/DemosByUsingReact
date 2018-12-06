@@ -19,7 +19,6 @@ class Demos extends React.Component<Props, State> {
   constructor(props: any) {
     super(props);
     this.state = {
-      desc2: '',
     }
   }
 
@@ -33,7 +32,7 @@ class Demos extends React.Component<Props, State> {
       <div>
         <h2>{name}</h2>
         <div className="desc">
-          <textarea value={desc ? desc.reduce((result, val) => result += val, '') : ''} readOnly={true}/>
+          {desc ? desc.map(msg => <p key={msg}>{msg}</p>) : ''}
         </div>
         <div className='jump-link'>
           <Link className='link' to={to} target='_blank'>See the demo ⇨</Link>

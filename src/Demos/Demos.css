@@ -1,13 +1,15 @@
 .desc {
-  color: #000000;
-}
-
-.desc textarea {
   width: 100%;
-  max-width: 100%;
-  min-height: 250px;
+  height: 250px;
+  padding: 8px;
+  overflow: scroll;
   font-size: 16px;
   background-color: lightcyan;
+  border: 1px solid #000000;
+}
+
+.desc p {
+  margin-bottom: 4px;
 }
 
 .jump-link {

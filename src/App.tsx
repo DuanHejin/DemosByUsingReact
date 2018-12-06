@@ -6,9 +6,9 @@ class App extends React.Component {
   
   public render() {
     return (
-      <div>
+      <React.Fragment>
         <AppRoutes/>
-      </div>
+      </React.Fragment>
     );
   }
 }

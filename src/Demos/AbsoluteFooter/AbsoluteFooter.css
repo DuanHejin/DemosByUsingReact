@@ -1,0 +1,17 @@
+#root {
+  /* height: 100vh; */
+}
+
+.absolute-footer-wrap {
+  /* position: relative;
+  min-height: 100%; */
+  font-size: 36px;
+}
+
+.absolute-footer-wrap .footer {
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background: grey;
+}

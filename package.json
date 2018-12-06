@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/react-router-dom": "^4.3.0",
+    "bootstrap": "3.3.7",
     "codelyzer": "^4.4.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
