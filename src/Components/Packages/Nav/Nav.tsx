@@ -30,7 +30,7 @@ class Nav extends React.Component<Props> {
         <ul>
           {
             this.getNavList().map((nav, index) =>
-             <li key={index}><a href="javascript:void 0" onClick={onClick(nav)}>{index+1}.{nav.name}</a></li>)
+             <li key={index}><a onClick={onClick(nav)}>{index+1}.{nav.name}</a></li>)
           }
         </ul>
       </div>
