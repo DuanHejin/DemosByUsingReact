@@ -50,6 +50,18 @@ export class NavService {
         'react生命周期',
       ]
     }));
+    list.push(new NavModel({
+      name: 'checkShouldComUpdate', to: '/checkShouldComUpdate',
+      desc: [
+        'checkShouldComUpdate',
+      ]
+    }));
+    list.push(new NavModel({
+      name: 'hooksUpdateState', to: '/hooksUpdateState',
+      desc: [
+        'hooksUpdateState',
+      ]
+    }));
 
     return list;
   }
